@@ -1,5 +1,5 @@
 <?php
-namespace Puleeno\MongoDb\Helpers;
+namespace Puleeno\MongoDB\Helpers;
 
 class ObjectId
 {
