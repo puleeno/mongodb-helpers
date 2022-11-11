@@ -3,6 +3,8 @@ namespace Puleeno\MongoDb\Helpers;
 
 class ObjectId
 {
+    const KEY_LENGTH = 24;
+
     /**
      * This is needed to keep documents unique that have the same timestamp.
      * @var integer
@@ -34,5 +36,9 @@ class ObjectId
 
         // Return Mongo ID
         return $id;
+    }
+
+    public static function length() {
+        return static::KEY_LENGTH;
     }
 }
