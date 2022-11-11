@@ -5,6 +5,7 @@
             "Puleeno\\MongoDB\\Helpers\\": "src/"
         }
     },
+    "license": "MIT",
     "authors": [
         {
             "name": "Puleeno Nguyen",
