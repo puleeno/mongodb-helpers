@@ -1,0 +1,15 @@
+{
+    "name": "puleeno/mongodb-helpers",
+    "autoload": {
+        "psr-4": {
+            "Puleeno\\MongoDB\\Helpers\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Puleeno Nguyen",
+            "email": "puleeno@gmail.com"
+        }
+    ],
+    "require": {}
+}
