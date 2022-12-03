@@ -23,7 +23,7 @@ class ObjectId
         // Build Binary Id
         $binaryTimestamp = pack('N', $timestamp); // unsigned long
         $machineId = substr(md5(gethostname()), 0, 3); // 3 bit machine identifier
-        $binaryPID = pack('n', posix_getpid()); // unsigned short
+        $binaryPID = pack('n', getmypid()); // unsigned short
         $counter = substr(pack('N', self::$_mongoIdFromTimestampCounter++), 1, 3); // Counter
 
         $binaryId = "{$binaryTimestamp}{$machineId}{$binaryPID}{$counter}";
